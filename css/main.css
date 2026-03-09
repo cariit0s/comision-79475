@@ -351,6 +351,11 @@ button{
     color: #2C2F61;
 }
 
-button{
+.form-contact button{
     margin-top: 15px;
+    padding:10px 20px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:20px;
 }
