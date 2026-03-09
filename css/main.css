@@ -1,0 +1,356 @@
+/* linea de comentario*?/
+/* juego de pares
+    selector{
+        propiedad: valor;
+    }
+*/
+/* CLASS
+.cath3{
+    color: #2C2F61;
+} */
+
+/* ID 
+#azul{
+    color: blue;
+}*/
+
+                                                /* CSS de la Entrega 2 */
+
+/*Reset de margen*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+header img{
+    width: 70%;         /*Tamaño del logo*/
+}
+ 
+header nav ul{
+    list-style: none;
+    font-size: x-large;
+    display: flex;
+    gap: 40px;
+}
+
+main .container-welcome {
+    margin-bottom: 30px;
+}
+
+.container-welcome img{
+    width:100%;
+    height: auto;
+}
+
+main{
+    flex-wrap: wrap;
+}
+
+.section-arrival {
+    padding: 20px;
+    margin-bottom: auto;
+}
+
+.container-arrival{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align:center;
+}
+
+.container-arrival h3 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight:400;
+    text-align: center;
+}
+
+.title-img-new{
+    font-style: unset;
+    font: size 30px;
+}
+
+.container-home img {
+    width:100%;
+    margin: auto;
+    object-fit:cover;
+}
+
+.tittle-section {
+    margin-bottom:30px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+h1{
+    display: flex;
+    color: #2C2F61;
+    text-align: center;
+}
+
+h2{
+    color: #2C2F61;
+    text-align: left;
+}
+
+h3{
+    color: #2C2F61;
+    text-align: justify;
+}
+
+h5{
+    color: #2C2F61;
+}
+
+h6{
+    color: #2C2F61;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ICONOS REDES*/
+footer .social-network{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .social-network img{
+    align-items: center;
+    width: 40px;
+    height: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main .tittle-home{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    display: flex;
+    margin: 40px;
+}
+
+.img-container-contact{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle-social{
+    margin: auto;
+    color: white;
+    margin-top: 10px;
+    margin-bottom:20px;
+    font-size: 30px;
+    font-weight:200;
+}
+
+.text-social{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight:300;
+}
+
+.title-contact{
+    color: #2C2F61;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: oblique;
+}
+.p-contact{
+    color: black;
+    text-align: center;
+}
+
+.title-img-new{
+    display: flex;
+    color: #2C2F61;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img-cat{
+    color: #2C2F61;
+    text-align: center;
+}
+
+/* -------------------CLUB SECTION-------------------- */
+.section-club{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+    background:#f5f5f5;
+}
+
+.text-club{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size: 80px;
+    margin:20px;
+    margin-bottom: 30px;
+}
+
+.description-club{
+    font-size: 20px;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+
+/* -------------------CATALOGO PAGE-------------------- */
+.section-product {
+    margin: 20px;
+}
+
+.tittle-section{
+    margin: 20px;
+}
+
+.container-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.container-items h3 {
+    display: block;
+    margin-top: 10px;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.container-items h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.container-items h6 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.container-items p{
+    color: #2C2F61;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.container-items {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-items img{
+    width: 100%;
+    height: auto;
+}
+
+/* -------------CONTACTO---------------- */
+
+.section-contact{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #2C2F61;
+    text-align: left;
+}
+
+.section-contact h1{
+    font-size: 60px;
+}
+
+.section-contact p{
+    font-size: 2rem;
+}
+
+.container-contact{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.container-contact h2{
+    color: #2C2F61;
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.container-contact p{
+    color: #2C2F61;
+    margin-top: 40px;
+    font-size: 20px
+}
+
+.container-contact img{
+    width:100%;
+    max-width:1000px;
+    margin:40px auto;
+    display:block;
+}
+
+.form-contact{
+    margin-top:30px;
+}
+
+.form-contact div{
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+
+.container-contact .form-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-text label{
+    color: #2C2F61;
+}
+
+button{
+    margin-top: 15px;
+}
