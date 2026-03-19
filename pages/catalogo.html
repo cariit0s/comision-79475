@@ -8,12 +8,20 @@
     <title>Catálogo de la tienda</title>
 </head>
 <body>
+    <!-- Script para Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <header>
         <a href="../index.html">
             <img src="../img/luxdrop_logo.png" alt="logo">
         </a>
-         <nav>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>    
+
+        <nav id="nav">
              <ul>
                 <li>
                     <a href="../index.html">
@@ -31,8 +39,9 @@
                     </a>
                 </li>
              </ul>
-         </nav>
-     </header>
+        </nav>
+    </header>
+
     <main>
         <!-- Inicio Catálogo -->
         <div class="container-welcome">
@@ -125,6 +134,51 @@
                     <p>4 colores disponibles</p>
                 </div>
 
+                <!-- Decima imagen -->
+                <div class="container-items">
+                    <img src="../img/saco10.png" alt="Cotton Quarter-Zip Mockneck Jumper" class="catalogo">
+                    <h3 class="cath3">Cotton Quarter-Zip Mockneck Jumper</h3>
+                    <h5>Polo Ralph Lauren</h5>
+                    <h6>$180.00</h6>
+                    <p>6 colores disponibles</p>
+                </div>
+
+                <!-- Onceaba imagen -->
+                <div class="container-items">
+                    <img src="../img/saco11.png" alt="Cable-Knit Striped Cotton Jumper" class="catalogo">
+                    <h3 class="cath3">Cable-Knit Striped Cotton Jumper</h3>
+                    <h5>Polo Ralph Lauren</h5>
+                    <h6>$180.00</h6>
+                    <p>2 colores disponibles</p>
+                </div>
+
+                <!-- Doceaba imagen -->
+                <div class="container-items">
+                    <img src="../img/saco12.png" alt="Cotton Polo-Collar Jumper" class="catalogo">
+                    <h3 class="cath3">Cotton Polo-Collar Jumper</h3>
+                    <h5>Polo Ralph Lauren</h5>
+                    <h6>$150.00</h6>
+                    <p>3 colores disponibles</p>
+                </div>
+
+                 <!-- Treceaba imagen -->
+                <div class="container-items">
+                    <img src="../img/saco13.png" alt="Waffle-Knit Wool-Cotton Jumper" class="catalogo">
+                    <h3 class="cath3">Waffle-Knit Wool-Cotton Jumper</h3>
+                    <h5>Polo Ralph Lauren</h5>
+                    <h6>$170.00</h6>
+                    <p>3 colores disponibles</p>
+                </div>
+
+                <!-- Catorceaba imagen -->
+                <div class="container-items">
+                    <img src="../img/saco14.png" alt="Waffle-Knit Wool-Cotton Jumper" class="catalogo">
+                    <h3 class="cath3">Waffle-Knit Wool-Cotton Jumper</h3>
+                    <h5>Polo Ralph Lauren</h5>
+                    <h6>$445.00</h6>
+                    <p>2 colores disponibles</p>
+                </div>
+
             </div>
         </section>
     </main>
@@ -152,5 +206,13 @@
         <!-- estilos mediante etiquetas (estilos en linea) -->
         <p>LuxDrop © 2026. Todos los derechos reservados</p>
     </footer>
+    <script>
+            const toggle = document.getElementById("menu-toggle");
+            const nav = document.getElementById("nav");
+
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+    </script>
 </body>
 </html>
