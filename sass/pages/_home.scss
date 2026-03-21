@@ -1,0 +1,174 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+/* Estilos de Header */
+header{
+    @include flex;
+    background-color: $color-basic;
+    padding-right: 40px;
+    a{
+        img{
+        width: 120px;
+        }
+    }
+    .menu-toggle {
+        @include menu-burger;
+    }
+    nav{
+        ul{
+            background-color: $color-basic;
+            list-style: none;
+            font-size: x-large;
+            display: flex;
+            gap: 40px;
+            a{
+                background-color: $color-basic;
+                color: white;
+            }
+        }
+    }
+}
+
+/* Estilo Main */
+main{
+    flex-wrap: wrap;
+    .container-welcome {
+        margin-bottom: 30px;
+        .tittle-home {
+            @include h1-tittle;
+            font-size: 50px;
+            font-weight: 200;
+            display: flex;
+            margin: 40px;
+        }
+        img {
+            max-width:100%;
+            height: auto;
+        }
+    }
+}
+
+/* Estilo de Seccion Prendas */
+.section-arrival {
+    padding: 20px;
+    margin-bottom: auto;
+    .tittle-section{
+        margin-bottom:30px;
+        font-size:24px;
+        font-weight:bold;
+        h2{
+            @include h2-home;
+        }
+    }    
+    .container-arrival{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        text-align:center;
+        .container-home{
+            img {
+                width:100%;
+                margin: auto;
+                object-fit:cover;
+            }
+            h3 {
+                @include h3-tittle;
+                font-style: unset;
+                margin-top: 10px;
+                font-size: 30px;
+                font-weight:400;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: $color-text;
+            }
+        }
+    }
+}
+
+/* Estilo de Seccion Club */
+.section-club{
+    padding:60px 20px;
+    background: $color-club;
+    .club-container{
+        max-width:1250px;
+        margin:auto;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:40px;
+        .text-club{
+            flex:1;
+            h2 {
+                font-size:32px;
+                margin-bottom:15px;
+                color: $color-text;
+            }
+            .description-club{
+                font-size:18px;
+                line-height:1.6;
+                margin-bottom:25px;
+                max-width:400px;
+            }
+            .btn-club{
+                margin-top: 20px;
+                display:inline-block;
+                padding:12px 25px;
+                background:black;
+                color:white;
+                border-radius:25px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+            .btn-club:hover{
+                background:#333;
+            }
+        }
+        .club-img{
+            flex:1;
+            img {
+                width:100%;
+                border-radius:12px;
+            }
+        }
+    }
+}
+
+/* Estilo de Footer */
+footer {
+    @include footer-cf;
+    .section-tittle-social{
+        .tittle-social{
+            @include h4-social;
+            font-size: 20px;
+        }
+    }
+    .social-network {
+        @include div-social-network;
+        a{
+            color: $color-bg;
+            text-decoration: none;
+        }
+        img {
+            align-items: center;
+            width: 40px;
+            height: auto;
+        }
+    }
+    .section-text-social{
+        .text-social{
+            @include h4-social;
+        }
+    }
+    p{
+        color: $color-bg;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+}

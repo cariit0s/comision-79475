@@ -1,0 +1,59 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin menu-burger {
+    display:none;
+    font-size:28px;
+    background:none;
+    border:none;
+    color:$color-bg;
+    cursor:pointer;
+}
+
+@mixin h2-home {
+    color: $color-text;
+    text-align: left;
+    margin-bottom:30px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+@mixin h1-tittle {
+    display: flex;
+    color: $color-text;
+    text-align: center;
+}
+
+@mixin h3-tittle {
+    color:$color-bg;
+    text-align: justify;
+}
+
+@mixin footer-cf {
+    background-color: $color-basic;
+    text-align: center;
+    padding: 20px;
+}
+
+@mixin h4-social {
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight:300;
+}
+
+@mixin div-social-network {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
