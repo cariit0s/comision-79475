@@ -1,0 +1,140 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+/* Estilos de Header */
+header{
+    @include flex;
+    background-color: $color-basic;
+    padding-right: 40px;
+    img{
+        width: 120px;
+    }
+    .menu-toggle {
+        @include menu-burger;
+    }
+    nav{
+        ul{
+            background-color: $color-basic;
+            list-style: none;
+            font-size: x-large;
+            display: flex;
+            gap: 40px;
+            a{
+                background-color: $color-basic;
+                color: $color-bg;
+            }
+        }
+    }
+}
+
+/* Seccion de Contacto */
+.section-contact{
+    h1{
+        @include h1-tittle;
+        font-size: 50px;
+        font-weight: 200;
+        display: flex;
+        margin: 40px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 2rem;
+        text-align: center;
+        color:  $color-text;
+        font-style: italic;
+    }
+    .container-contact{
+        max-width:1000px;
+        margin:auto;
+        text-align:center;
+        img {
+            width:100%;
+            max-width:1000px;
+            margin:40px auto;
+            display:block;
+        }
+        h2 {
+            color: $color-text;
+            font-style: italic;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        p{
+            color:  $color-text;
+            margin-top: 40px;
+            font-size: 20px
+        }
+        .form-contact{
+            margin-top:30px;
+            div{
+                margin-top: 15px;
+                margin-bottom:20px;
+            }
+            .form-label{
+                font-size: 20px;
+                font-weight: bold;
+                font-style: unset;
+                margin-top: 10px;
+                font-size: 30px;
+                font-weight:400;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: $color-text;
+            }
+            .form-text {
+                label {
+                    color:  $color-text;
+                }
+            
+            }
+        }
+        button {
+            margin-bottom: 50px;
+            padding:10px 20px;
+            background:black;
+            color:white;
+            border:none;
+            border-radius:20px;
+        }
+    }
+}
+
+/* Estilo de Footer */
+footer {
+    @include footer-cf;
+    .section-tittle-social{
+        .tittle-social{
+            @include h4-social;
+            font-size: 20px;
+        }
+    }
+    .social-network {
+        @include div-social-network;
+        a{
+            color: $color-bg;
+            text-decoration: none;
+        }
+        img {
+            align-items: center;
+            width: 40px;
+            height: auto;
+        }
+    }
+    .section-text-social{
+        .text-social{
+            @include h4-social;
+        }
+    }
+    p{
+        color: $color-bg;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+}

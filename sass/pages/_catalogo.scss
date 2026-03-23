@@ -1,0 +1,128 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+/* Estilos de Header */
+header{
+    @include flex;
+    background-color: $color-basic;
+    padding-right: 40px;
+    img{
+        width: 120px;
+    }
+    .menu-toggle {
+        @include menu-burger;
+    }
+    nav{
+        ul{
+            background-color: $color-basic;
+            list-style: none;
+            font-size: x-large;
+            display: flex;
+            gap: 40px;
+            a{
+                background-color: $color-basic;
+                color: $color-bg;
+            }
+        }
+    }
+}
+
+/* Estilo Main */
+.main-catalogo{
+    flex-wrap: wrap;
+    .container-welcome {
+        margin-bottom: 30px;
+        .tittle-home {
+            @include h1-tittle;
+            font-size: 50px;
+            font-weight: 200;
+            display: flex;
+            margin: 40px;
+        }
+    }
+}
+
+/* Seccion de Catalogo */
+.section-product{
+    margin: 20px;
+    .tittle-section{
+        margin: 20px;
+        h2 {
+            @include h2-home
+        }
+    }
+    .container-product{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        .container-items{
+            text-align: center;
+            margin-top: 10px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            h3{
+                display: block;
+                margin-top: 15px;
+                font-size: 22px;
+                font-style: italic;
+                line-height: 1.3;
+                text-align: left;
+            }
+            h5 {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            h6 {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+             p{
+                color: $color-text;
+                margin-top: 10px;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/* Estilo de Footer */
+footer {
+    @include footer-cf;
+    .section-tittle-social{
+        .tittle-social{
+            @include h4-social;
+            font-size: 20px;
+        }
+    }
+    .social-network {
+        @include div-social-network;
+        a{
+            color: $color-bg;
+            text-decoration: none;
+        }
+        img {
+            align-items: center;
+            width: 40px;
+            height: auto;
+        }
+    }
+    .section-text-social{
+        .text-social{
+            @include h4-social;
+        }
+    }
+    p{
+        color: $color-bg;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-style: oblique;
+    }
+}

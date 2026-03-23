@@ -23,9 +23,7 @@
             <img src="img/luxdrop_logo.png" alt="logo">
         </a>
         <!-- BOTÓN HAMBURGUESA -->
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
-        </button>    
+        <button class="menu-toggle">☰</button>
 
         <!-- etiqueta para un menu de nav -->
          <nav id="nav">
@@ -110,7 +108,6 @@
                     <h3 class="title-img-new">Estate-Rib Quarter-Zip Pullover</h3>
                 </div>
             </div>
-
         </section>
 
         <section class="section-arrival">
@@ -160,8 +157,15 @@
 
             </div>
         </section>
-
     </main>
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+         toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
 
     <!-- etiqueta para el pie de página -->
     <footer>
@@ -187,13 +191,5 @@
         <!-- estilos mediante etiquetas (estilos en linea) -->
         <p>LuxDrop © 2026. Todos los derechos reservados</p>
     </footer>
-        <script>
-            const toggle = document.getElementById("menu-toggle");
-            const nav = document.getElementById("nav");
-
-            toggle.addEventListener("click", () => {
-                nav.classList.toggle("active");
-            });
-        </script>
 </body>
 </html>

@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-catalogo">
         <!-- Inicio Catálogo -->
         <div class="container-welcome">
             <h1 class="tittle-home">Catálogo</h1>
@@ -178,10 +178,19 @@
                     <h6>$445.00</h6>
                     <p>2 colores disponibles</p>
                 </div>
-
             </div>
         </section>
     </main>
+    
+    <!-- Imagen botón hamburguesa -->
+    <script>
+            const toggle = document.getElementById("menu-toggle");
+            const nav = document.getElementById("nav");
+
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+    </script>
 
     <footer>
         <div class="section-tittle-social">
@@ -206,13 +215,5 @@
         <!-- estilos mediante etiquetas (estilos en linea) -->
         <p>LuxDrop © 2026. Todos los derechos reservados</p>
     </footer>
-    <script>
-            const toggle = document.getElementById("menu-toggle");
-            const nav = document.getElementById("nav");
-
-            toggle.addEventListener("click", () => {
-                nav.classList.toggle("active");
-            });
-    </script>
 </body>
 </html>

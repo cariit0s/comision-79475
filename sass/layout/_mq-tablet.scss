@@ -1,0 +1,54 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    
+    /*#menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:60px;
+        right:0;
+        width:100%;
+        background: $color-basic;
+        display:none;
+    }*/
+
+    header nav ul{
+        flex-direction:row;
+        text-align:center;
+        padding:20px 0;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Para la sección de Unete al Club */
+    .club-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .description-club{
+        margin:auto;
+    }
+
+    .text-club h2{
+        font-size:24px;
+    }
+
+    .description-club{
+        font-size:16px;
+    }
+}
