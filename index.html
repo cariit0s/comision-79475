@@ -23,7 +23,12 @@
             <img src="img/luxdrop_logo.png" alt="logo">
         </a>
         <!-- BOTÓN HAMBURGUESA -->
-        <button class="menu-toggle">☰</button>
+        <button id="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
 
         <!-- etiqueta para un menu de nav -->
          <nav id="nav">
@@ -162,7 +167,8 @@
         const toggle = document.getElementById("menu-toggle");
         const nav = document.getElementById("nav");
 
-         toggle.addEventListener("click", () => {
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active");
             nav.classList.toggle("active");
         });
     </script>
