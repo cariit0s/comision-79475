@@ -50,6 +50,10 @@ header{
             a{
                 background-color: $color-basic;
                 color: $color-bg;
+                text-decoration: none;
+                &:hover {
+                    color: $color-hover;
+                }
             }
         }
     }

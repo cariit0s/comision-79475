@@ -58,7 +58,7 @@ header nav ul a {
   text-decoration: none;
 }
 header nav ul a:hover {
-  color: #00bcd4;
+  color: #7d82e6;
 }
 
 /* Estilo Main */
@@ -161,7 +161,7 @@ main .container-welcome img {
   transition: 0.3s;
 }
 .section-club .club-container .text-club .btn-club:hover {
-  background: #333;
+  background: #2C2F61;
 }
 .section-club .club-container .club-img {
   flex: 1;
@@ -268,6 +268,10 @@ header nav ul {
 header nav ul a {
   background-color: black;
   color: white;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  color: #7d82e6;
 }
 
 /* Seccion de Contacto */
@@ -437,6 +441,10 @@ header nav ul {
 header nav ul a {
   background-color: black;
   color: white;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  color: #7d82e6;
 }
 
 /* Estilo Main */
