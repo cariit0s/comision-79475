@@ -50,6 +50,10 @@ header{
             a{
                 background-color: $color-basic;
                 color: $color-bg;
+                text-decoration: none;
+                &:hover {
+                    color: $color-hover;
+                }
             }
         }
     }
@@ -119,11 +123,11 @@ header{
         }
         button {
             margin-bottom: 50px;
-            padding:10px 20px;
-            background:black;
-            color:white;
-            border:none;
-            border-radius:20px;
+            padding: 10px 20px;
+            background: $color-basic;
+            color:$color-bg;
+            border: none;
+            border-radius: 20px;
         }
     }
 }
