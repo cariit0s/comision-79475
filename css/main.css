@@ -343,6 +343,9 @@ header nav ul a:hover {
   border: none;
   border-radius: 20px;
 }
+.section-contact .container-contact button:hover {
+  background: #2C2F61;
+}
 
 /* Estilo de Footer */
 footer {
