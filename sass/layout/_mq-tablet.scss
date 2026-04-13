@@ -52,4 +52,16 @@
     .description-club{
         font-size:16px;
     }
+    
+    /* Para que no quede pegado a los lados en Contacto */
+    .section-contact 
+    {
+        p {
+            border: 10px; 
+            padding: 10px;
+            border-radius: 6px;
+            margin:10px 15px; 
+            text-align: center; 
+        }
+    }
 }
